@@ -1,5 +1,20 @@
-// app/api/deliverypartner/[id]/route.ts
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
+
+export async function GET(
+  req: Request,
+  { params }: { params: { id: string } } // ✅ this object structure is correct
+) {
+  
+
+  const partner = data.find((p) => p._id === params.id);
+
+  if (!partner) {
+    return NextResponse.json({ message: 'Partner not found' }, { status: 404 });
+  }
+
+  return NextResponse.json(partner);
+}
+
 
 const data= [
     {
@@ -58,16 +73,3 @@ const data= [
         metrics: { deliveriesToday: 0, averageDeliveryTime: 0 },
       },
   ];
-
-
-export async function GET(request: NextRequest, context: { params: { id: string } }) {
-  const { id } = context.params;
-
-  const partner = data.find((p) => p._id === id);
-
-  if (!partner) {
-    return NextResponse.json({ message: 'Partner not found' }, { status: 404 });
-  }
-
-  return NextResponse.json(partner);
-}
