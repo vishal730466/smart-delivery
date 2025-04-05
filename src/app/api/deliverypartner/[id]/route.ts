@@ -60,7 +60,7 @@ const data = [
 
 export async function GET(
   req: NextRequest,
-  context: any // 👈 this is the trick: use `any` or don't type this at all
+  context // 👈 this is the trick: use `any` or don't type this at all
 ) {
   const { id } = context.params;
 
