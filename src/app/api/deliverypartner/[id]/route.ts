@@ -21,7 +21,7 @@ const data = [
     currentLoad: 0,
     areas: ['Zone C'],
     shift: { start: '10:00', end: '19:00' },
-    metrics: { deliveriesToday: 0, averageDeliveryTime: 0 },
+    metrics: { deliveriesToday: 5, averageDeliveryTime: 10 },
   },
   {
     _id: 'dp003',
@@ -54,7 +54,7 @@ const data = [
     currentLoad: 0,
     areas: ['Zone F'],
     shift: { start: '07:00', end: '16:00' },
-    metrics: { deliveriesToday: 0, averageDeliveryTime: 0 },
+    metrics: { deliveriesToday: 13, averageDeliveryTime: 20 },
   },
 ];
 
