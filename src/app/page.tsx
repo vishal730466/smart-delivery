@@ -21,7 +21,7 @@ export default function HomePage() {
           </Card>
         </Link>
 
-        <Link href="/partners" className="card-link">
+        <Link href="/deliveryPartner" className="card-link">
           <Card className="card">
             <CardContent>
               <h2 className="card-title">Partners</h2>
