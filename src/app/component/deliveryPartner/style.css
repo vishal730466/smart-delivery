@@ -1,0 +1,39 @@
+.table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+  
+  .dp-table {
+    color: black;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .dp-table th,
+  .dp-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  .dp-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+  }
+  
+  .status-active {
+    color: green;
+    font-weight: 600;
+  }
+  
+  .status-inactive {
+    color: red;
+    font-weight: 600;
+  }
+  
