@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import './style.css';
 
 import DeliveryPartnerComponent from '../component/deliveryPartner/deliveryPartner';
