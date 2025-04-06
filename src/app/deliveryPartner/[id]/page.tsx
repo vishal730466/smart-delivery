@@ -29,7 +29,7 @@ const PartnerProfile: React.FC = () => {
   useEffect(() => {
     async function fetchPartner() {
       try {
-        const res = await fetch(`http://localhost:3000/api/deliverypartner/${id}`, {
+        const res = await fetch(`/api/deliverypartner/${id}`, {
           cache: "no-store",
         });
         if (!res.ok) {
